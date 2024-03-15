@@ -2,19 +2,20 @@
 #include "Reverser.h"
 #include "Truckloads.h"
 
+using namespace std;
+
 int main() {
-    // Test Reverser
+
     Reverser r;
     int reversedNumber = r.reverseDigit(12345);
-    std::cout << "Reversed number: " << reversedNumber << std::endl;
+    cout << "Reversed number: " << reversedNumber << endl;
 
-    std::string reversedString = r.reverseString("hello");
-    std::cout << "Reversed string: " << reversedString << std::endl;
+    string reversedString = r.reverseString("hello");
+    cout << "Reversed string: " << reversedString << endl;
 
-    // Test Truckloads
     Truckloads t;
     int numTrucks = t.numTrucks(10, 3);
-    std::cout << "Number of trucks needed: " << numTrucks << std::endl;
+    cout << "Number of trucks needed: " << numTrucks << endl;
 
     return 0;
 }
